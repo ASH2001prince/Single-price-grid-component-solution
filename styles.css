@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  /* ### Primary */
+  --Cyan: hsl(179, 62%, 43%);
+  --Cyan-light: hsla(179, 62%, 43%, 60%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  /* ### Neutral */
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--Light-Gray);
+}
+.container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+  width: 50vw;
+  height: 72vh;
+  max-height: 90vh;
+}
+.rectangle__card {
+  background-color: white;
+  height: 100%;
+  padding: 30px;
+  border-radius: 20px 20px 0 0;
+}
+h1 {
+  color: var(--Cyan);
+  font-size: 2.3rem;
+  text-align: left;
+}
+h2 {
+  color: var(--Bright-Yellow);
+  margin-top: 30px;
+}
+p {
+  color: var(--Grayish-Blue);
+  margin-top: 20px;
+  font-size: 1.4rem;
+  letter-spacing: 0.1px;
+}
+.square__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 115%;
+}
+.left__square {
+  background-color: var(--Cyan);
+  border-radius: 0 0 0 20px;
+}
+.right__square {
+  background-color: var(--Cyan);
+  border-radius: 0 0 20px 0;
+  opacity: 0.6;
+}
+h3 {
+  font-size: 1.7rem;
+  color: var(--Light-Gray);
+  margin: 25px 0 0 20px;
+}
+button {
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  width: 90%;
+  height: 4.2rem;
+  justify-content: center;
+  align-items: center;
+  color: var(--Light-Gray);
+  background-color: var(--Bright-Yellow);
+  border: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 7px;
+}
+
+.left__square > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: end;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.left__square > div > p {
+  color: var(--Light-Gray);
+  margin-left: 10px;
+  padding-bottom: 12px;
+  opacity: 0.8;
+}
+span {
+  font-size: 3.4rem;
+  color: var(--Light-Gray);
+}
+.right__square > p {
+  margin-left: 20px;
+  color: var(--Light-Gray);
+  width: 65%;
+}
+.left__square > p:last-of-type {
+  color: var(--Light-Gray);
+  margin-left: 20px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attribution {
+  color: var(--Cyan);
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Bright-Yellow);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    width: 70vw;
+    min-height: 70vh;
+    max-height: 90vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 72vh;
+    flex-direction: column;
+  }
+  .square__cards {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+  }
+  body {
+    min-height: 130vh;
+  }
+  .rectangle__card {
+    background-color: white;
+    height: 100%;
+    padding: 30px;
+    border-radius: 20px 20px 0 0;
+  }
+
+  h1 {
+    color: var(--Cyan);
+    font-size: 2rem;
+    text-align: left;
+  }
+  h2 {
+    color: var(--Bright-Yellow);
+    margin-top: 15px;
+  }
+  p {
+    color: var(--Grayish-Blue);
+    margin-top: 15px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1px;
+  }
+  button {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .left__square {
+    border-radius: 0;
+  }
+  .right__square {
+    height: 25vh;
+    border-radius: 0 0 10px 10px;
+  }
+  footer {
+    margin-top: 5rem;
+  }
+}
+
+/* the dcariest moment is alwaya just before you */
+
+/* the last one should be obne the lasy one  */
